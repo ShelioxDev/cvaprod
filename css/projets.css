@@ -450,12 +450,20 @@ nav .nav-item a:nth-child(2) {
     justify-content: center;
 }
 
-.portfolio-grid img {
-    width: 360px;
-    height: auto;
+.portfolio-grid .img {
+	width: 360px;
+	height: 360px;
+    display: flex;
+	justify-content: center;
+	overflow: hidden;
 }
 
-.portfolio-grid img:hover {
+.portfolio-grid .img img {
+	width: auto;
+	height: 100%;
+}
+
+.portfolio-grid .img:hover {
     scale: 1.05;
 	transition: all .3s ease;
 }
