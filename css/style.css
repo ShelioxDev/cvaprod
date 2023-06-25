@@ -369,9 +369,110 @@ nav .nav-item a:nth-child(2) {
 }
 
 @media(max-width:1000px){
+	.banner {
+		display: none;
+	}
+	.bar {
+		width: 5vw!important;
+		height: 0.6vw!important;
+		margin: 1vw auto!important;
+	}
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(24px) rotate(45deg);
+		background-color: #FFFFFF;
+	}
+	.title-logo {
+		scale: 1.4;
+		margin-left: 9.6vw;
+	}
+	.navbar {
+		min-height: 12vw!important;
+	}
+	.prod {
+		padding-top: 15vw!important;
+	}
+	.prodcard, .prodcard-2, .prodcard-3 {
+		width: 60vw!important;
+		height: 100vw!important;
+	}
+	.card.text-center, .card.text-center-2, .card.text-center-3 {
+		width: 60vw!important;
+		height: 100vw!important;
+		box-shadow: 1vw 0px 1vw rgba(0, 0, 0, 0.5)!important;
+	}
+	.behind-prodcard1, .behind-prodcard2, .behind-prodcard3 {
+		width: 60vw!important;
+		height: 100vw!important;
+	}
+	.rectangle {
+		height: 36vw!important;
+		width: 60vw!important;
+		border-left: 1vw solid rgba(255, 255, 255, 0.15)!important;
+		border-right: 1vw solid rgba(255, 255, 255, 0.15)!important;
+		border-bottom: 1vw solid rgba(255, 255, 255, 0.15)!important;
+	}
+	.play-circle {
+		box-shadow: 1vw 0px 1vw black!important;
+		left: 240!important;
+		bottom: 290!important;
+		height: 12.8vw!important;
+		width: 12.8vw!important;
+	}
+	.play-circle i {
+		height: 6.4vw!important;
+		width: 6.4vw!important;
+	}
+	.rectangle h2 {
+		font-size: 5vw;
+		top: 60!important;
+	}
+	.rectangle hr {
+		top: 120!important;
+	}
+	.rectangle h4 {
+		font-size: 3vw;
+		top: 16vw!important;
+	}
+	.rectangle span {
+		font-size: 3vw;
+		bottom: 70!important;
+	}
+	.textofbackcard {
+		padding-top: 2vw!important;
+		padding-left: 2vw!important;
+		padding-right: 1vw;
+		font-size: 3vw;
+	}
 	.bannercontent {
 		flex-direction: column!important;
-		padding-top: 85px!important;
+		padding-top: 8.5vw!important;
+	}
+	.media {
+		width: 12em!important;
+	}
+	.media i {
+		font-size: 9vw!important;
+	}
+	.contact-wrapper {
+		flex-direction: column!important;
+		align-items: center;
+		gap: 5vw;
+	}
+	.contact-list {
+		align-items: center!important;
+	}
+	.form-horizontal {
+		/* float: left; */
+		max-width: 400px;
+	}
+	footer .menu nav a {
+		font-size: 30px;
+	}
+	footer .socials {
+		font-size: 30px;
+	}
+	footer .socials .copyright {
+		font-size: 30px;
 	}
 }
 
