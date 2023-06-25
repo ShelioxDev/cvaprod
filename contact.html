@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="css/contact.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <script
+      src="https://kit.fontawesome.com/c2df078048.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("PH4qRDayGNha7zKut");
+        })();
+    </script>
+  </head>
+  <body>
+    <div class="contact">
+      <div class="contact-wrapper">
+        <div class="form-horizontal">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="NOM / ENTREPRISE"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="EMAIL"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="MESSAGE" id="message" required></textarea>
+          </div>
+          <button class="btn btn-primary send-button" onclick="sendMail()">
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">ENVOYER</span>
+            </div>
+        </button>
+        </div>
+    
+        <div class="direct-contact-container">
+  
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Les Adrets, France</span></i></li>
+            
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:+330651754713" title="Give me a call">(+33) 06 51 75 47 13</a></span></i></li>
+            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:prod.cva@gmail.com" title="Send me an email">prod.cva@gmail.com</a></span></i></li>
+            
+          </ul>
+  
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-codepen" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>       
+          </ul>
+          <hr>
+  
+          <div class="copyright">&copy; ALL RIGHTS RESERVED</div>
+  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

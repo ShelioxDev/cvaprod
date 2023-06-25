@@ -1,0 +1,323 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c2df078048.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer>function clicked_i_in_prodcard(n){
+      back = document.querySelector(".behind-prodcard" + n);
+      card = document.querySelector(".prd" + n);
+      card.style.setProperty("transform", "rotateY(180deg)");
+      back.style.setProperty("transform", "rotateY(0deg)");
+      setTimeout(() => {
+        card.style.setProperty("z-index", "0");
+        back.style.setProperty("z-index", "1");
+      }, 600)
+    
+    
+      
+    }
+    
+    function clicked_i_in_back_prodcard(n){
+      back = document.querySelector(".behind-prodcard" + n);
+      card = document.querySelector(".prd" + n);
+      card.style.setProperty("transform", "rotateY(0deg)");
+      back.style.setProperty("transform", "rotateY(180deg)");
+      setTimeout(() => {
+        card.style.setProperty("z-index", "1");
+        back.style.setProperty("z-index", "0");
+      }, 600)
+    
+    
+      
+    }</script>
+    <script src="js/index.js"></script>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("PH4qRDayGNha7zKut");
+        })();
+    </script>
+    <title>CVA Prod - Accueil</title>
+    <link rel="icon" href="images/favicon.png" sizes="16x16" style="border-radius: 100%;">
+  </head>
+  <body>
+    <div class="remove"></div>
+    <header>
+      <a href="#">
+      <img class="logo" src="images/cvaprodlogo.png" width="80" height="80"/>
+      </a>
+      <a href="#">
+        <h1 class="title-logo">CVA PROD.</h1>
+      </a>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">a propos</a>
+          </li>
+          <li class="nav-item">
+            <a href="projets.html" class="nav-link">projets</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+  </header>
+  <script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  
+  hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+  })
+  
+  document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+  }))
+  </script>
+    <div class="banner">
+      <div class="bannercontent">
+      <img src="images/cvaprodlogotransparent.png">
+      <div class="banner-column">
+      <h1><span>CVA PROD.</span></h1>
+      <h4><span>
+        Une agence spécialisée dans les sports extrêmes avec pour seul but :
+      </span></h4>
+      <h3><span>CAPTURE THE BEST</span></h3>
+    </div>
+  </div>
+    </div>
+    <div class="prod">
+      <h3>nos dernieres productions</h3>
+      <hr class="separator" noshade />
+      <div class="prodrow">
+      <div class="prodcard">
+
+        <div class="card text-center prd1">
+          <div class="rectangle">
+            <a class="play-circle" href="day-in-top.html">
+              <i class="fa-solid fa-play fa-sm"></i>
+            </a>
+            <h2>a day in top</h2>
+            <hr noshade />
+            <h4>Réalisation / Production</h4>
+            <span>Voir d'avantage <i onclick="clicked_i_in_prodcard(1)" class="fa-solid fa-right-to-bracket"></i></span>
+          </div>
+        </div>
+        <div class="behind-prodcard1">
+          <div class="textofbackcard">
+        <h2><u>Titre</u> : A DAY IN TOP</h2>
+        <h2><u>Réalisation</u> : CVA Prod.</h2>
+        <h2><u>Production</u> : CVA Prod.</h2>
+        <h2><u>Localisation</u> : Mont-Blanc</h2>
+        <h2><u>Durée</u> : 2 MIN 30</h2>
+        <h3>Informations complémentaires :</h3>
+        <p>Film retrassant l'histoire d'un cycliste passionné s'étant mit en tête de gravir le Mont-Blanc à vélo.
+           A travers ce documentaire, redécouvrez le Mont-Blanc comme vous ne l'avez jamais vu auparavant et suivez l'histoire de ce cycliste.</p>
+           <span>Revenir en arrière <i onclick="clicked_i_in_back_prodcard(1)" class="fa-solid fa-right-to-bracket"></i></span>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      <div class="prodcard-2">
+        <div class="card text-center-2 prd2">
+          <div class="rectangle">
+            <a class="play-circle" href="#">
+              <i class="fa-solid fa-play fa-sm"></i>
+            </a>
+            <h2>bike on scott</h2>
+            <hr noshade />
+            <h4>Production</h4>
+            <span>Voir d'avantage <i onclick="clicked_i_in_prodcard(2)" class="fa-solid fa-right-to-bracket"></i></span>
+          </div>
+        </div>
+        <div class="behind-prodcard2">
+          <div class="textofbackcard">
+        <h2><u>Titre</u> : BIKE ON SCOTT</h2>
+        <h2><u>Production</u> : CVA Prod.</h2>
+        <h2><u>Localisation</u> : Whistler</h2>
+        <h2><u>Durée</u> : 3 MIN</h2>
+        <h3>Informations complémentaires :</h3>
+        <p>Film promotionelle pour la célèbre marque Scott. Un film sur leur nouvelle gamme Enduro sorti au cours de l'année 2021.</p>
+           <span>Revenir en arrière <i onclick="clicked_i_in_back_prodcard(2)" class="fa-solid fa-right-to-bracket"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="prodcard-3">
+        <div class="card text-center-3 prd3">
+          <div class="rectangle">
+            <a class="play-circle" href="#">
+              <i class="fa-solid fa-play fa-sm"></i>
+            </a>
+            <h2>whip on cloud</h2>
+            <hr noshade />
+            <h4>Réalisation</h4>
+            <span>Voir d'avantage <i onclick="clicked_i_in_prodcard(3)" class="fa-solid fa-right-to-bracket"></i></span>
+          </div>
+        </div>
+        <div class="behind-prodcard3">
+          <div class="textofbackcard">
+        <h2><u>Titre</u> : WHIP ON CLOUD</h2>
+        <h2><u>Réalisation</u> : CVA Prod.</h2>
+        <h2><u>Localisation</u> : Versaille</h2>
+        <h2><u>Durée</u> : 1 MIN 30</h2>
+        <h3>Informations complémentaires :</h3>
+        <p>Film sur l'étoile montante du dirt nommée Paul Couderc qui nous fera une préstation d'exception sur le spot local.</p>
+           <span>Revenir en arrière <i onclick="clicked_i_in_back_prodcard(3)" class="fa-solid fa-right-to-bracket"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="reseaux">
+      <h3>suivez nos actus</h3>
+      <hr class="separator" noshade />
+      <div class="social-media">
+        <a class="media" href="https://www.instagram.com/cva_prod/"><i class="fa-brands fa-instagram"></i></a>
+        <a class="media" href="https://www.youtube.com/channel/UCkf9MU19yksowd4LpothNuQ"><i class="fa-brands fa-youtube"></i></a>
+        <a class="media" href="https://www.linkedin.com/in/cva-prod-161a59256/"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h3>contact</h3>
+      <hr class="separator" noshade />
+      <div class="contact-wrapper">
+        <div class="form-horizontal">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="NOM / ENTREPRISE"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="EMAIL"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="MESSAGE" id="message" required="required"></textarea>
+          </div>
+          <button class="btn btn-primary send-button" onclick="sendMail()">
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">ENVOYER</span>
+            </div>
+        </button>
+        </div>
+    
+        <div class="direct-contact-container">
+  
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Les Adrets, France</span></i></li>
+            
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:+330651754713" title="Give me a call">(+33) 06 51 75 47 13</a></span></i></li>
+            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:prod.cva@gmail.com" title="Send me an email">prod.cva@gmail.com</a></span></i></li>
+            
+          </ul>
+  
+          <hr>
+          <ul class="social-media-list">
+            <a href="https://www.instagram.com/cva_prod/" target="_blank" class="contact-icon">
+              <i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com/channel/UCkf9MU19yksowd4LpothNuQ" target="_blank" class="contact-icon">
+              <i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/cva-prod-161a59256/" target="_blank" class="contact-icon">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          </ul>
+          <hr>
+  
+          <div class="copyright">&copy; ALL RIGHTS RESERVED</div>
+  
+        </div>
+      </div>
+    </div>
+    <div class="smartcontact">
+      <i class="fa-solid fa-paper-plane"></i>
+    </div>
+    <div class="contact-menu">
+      <h1>LET'S GET
+        <br>
+        IN TOUCH !</h1>
+        <div class="mail">
+        <a href="mailto:prod.cva@gmail.com">prod.cva@gmail.com</a>
+        </div>
+        <div class="tel">
+        <a href="tel:+330651754713">+33 06 51 75 47 13</a>
+        </div>
+        <div class="contact-icons">
+          <a href="https://www.instagram.com/cva_prod/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCkf9MU19yksowd4LpothNuQ"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/cva-prod-161a59256/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    <script>
+      const smartcontact = document.querySelector(".smartcontact");
+      const contactMenu = document.querySelector(".contact-menu");
+      const remove = document.querySelector(".remove");
+    
+      smartcontact.addEventListener("click", () => {
+        smartcontact.classList.toggle("active");
+        contactMenu.classList.toggle("active");
+        remove.classList.toggle("active");
+    })
+    
+    remove.addEventListener("click", () => {
+      smartcontact.classList.remove("active");
+      contactMenu.classList.remove("active");
+      remove.classList.remove("active");
+  })
+    </script>
+    <a href="#" class="go-top">
+      <img src="images/chevron-up.png">
+    </a>
+    <footer>
+      <div class="cva">
+        <h2>CVA Prod.</h2>
+        <p>CVA Production est une agence de communication visuelle spécialisée dans les sports extrêmes,
+          celle-ci est basée en Auvergnes-Rhônes-Alpes au pied de la montagne.
+          Vous retrouverez sur cette chaîne les dernières productions associées à cette agence.
+          Nous vous souhaitons un bon visionnage.</p>
+          <hr color="#737373">
+      </div>
+      <div class="menu">
+        <h2>Menu</h2>
+        <nav>
+          <a class="footer-a" href="#">Accueil</a>
+          <a class="footer-a" href="about.html">A propos</a>
+          <a class="footer-a" href="projets.html">Projets</a>
+          <a class="footer-a" href="materiel.html">Materiel</a>
+        </nav>
+      </div>
+      <div class="socials">
+        <nav>
+          <a class="footer-a" href="https://www.instagram.com/cva_prod/"><i class="fa-brands fa-instagram"></i></a>
+          <a class="footer-a" href="https://www.youtube.com/channel/UCkf9MU19yksowd4LpothNuQ"><i class="fa-brands fa-youtube"></i></a>
+          <a class="footer-a" href="https://www.linkedin.com/in/cva-prod-161a59256/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+        <p class="copyright">&copy; 2022 CVA PRODUCTION - AUVERGNE-RHONES-ALPES</p>
+      </div>
+    </footer>
+  </body>
+</html>

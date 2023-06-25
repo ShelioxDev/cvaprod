@@ -1,0 +1,391 @@
+html, body {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	font-family: Montserrat, "HelveticaNeue", helvetica, arial, sans-serif;
+	scroll-behavior: smooth;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	outline: none;
+	font-weight: 600;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+}
+
+.main-content {
+	padding: 0;
+	top: 0%;
+	left: 0%;
+    position: relative;
+    padding: 0;
+	height: 1046.5px;
+	width: 100%;
+}
+
+.nav-wrapper {
+	text-align: center;
+	left: 0%;
+	top: 0%;
+	position: fixed;
+	width: 100%;
+	height: 94px;
+	padding: 0;
+	background: rgba(255, 255, 255, 0.95);
+	z-index: 100;
+	opacity: 0.9;
+	-webkit-transition: opacity 0.515s ease-in-out;
+	transition: opacity 0.515s ease-in-out;
+}
+
+.mm-classic-panel {
+	padding-top: 10px;
+	width: 100%;
+	height: 52px;
+    text-align: center;
+	position: relative;
+    margin: 1em;
+}
+
+.mm-classic-panel ul {
+    display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	top: -10px;
+	z-index: 1001;
+	opacity: 1;
+	left: 2.5%;
+	position: absolute;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-left: 5%;
+}
+
+nav .nav-li {
+	display: inline-block;
+	font-size: 1em;
+	color: rgba(0, 0, 0, 1);
+}
+
+nav .nav-li:nth-child(1) {
+	display: inline-block;
+	font-size: 1em;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+nav .nav-li a {
+	position: relative;
+	display: block;
+	margin: 0 2px;
+	padding: 0.625rem 1.25rem;
+    padding-left: 0;
+    padding-right: 0;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+nav .nav-li a:before {
+	box-sizing: border-box;
+	transform: translateX(-100%);
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 99.5%;
+	height: 3px;
+	border-bottom: 3px solid transparent;
+}
+
+nav .nav-li a:hover:before {
+	transition: .15s transform linear, .3s height linear .3s;
+	transform: translateX(0);
+	height: 100%;
+	border-color: #000000;
+}
+nav .nav-li a:hover:after {
+	transition: .1s transform linear .2s, .1s height linear .3s;
+	transform: translateX(0);
+	height: 100%;
+	border-color: #000000;
+}
+nav .nav-li a:nth-child(1) {
+    margin-right: 15px;
+}
+nav .nav-li a:nth-child(2) {
+    margin-right: 15px;
+}
+.banner {
+	position: relative;
+    text-align: center;
+    width: 100%;
+}
+.banner img {
+    position: relative;
+    height: auto;
+    width: 100%;
+    bottom: 100px;
+}
+.banner h1 {
+    color: white;
+    z-index: 99;
+    margin: 0;
+    position: absolute;
+    font-size: 100px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner h4 {
+    color: white;
+    z-index: 99;
+    margin: 0;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner h3 {
+    color: white;
+    z-index: 99;
+    margin: 0;
+    position: absolute;
+    font-size: 35px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.prod {
+	position: relative;
+    text-align: center;
+    height: 1080px;
+}
+.prod h3 {
+    margin: 0;
+}
+.separator {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+	color: rgb(182, 182, 182);
+    size: 100px;
+    width: 100px;
+	margin-bottom: 50px;
+}
+.prodcard {
+	opacity: .9;
+	margin-left: auto;
+	margin-right: auto;
+    width: 300px;
+    height: 500px;
+}
+.card.text-center {
+	position: relative;
+	background: url('../images/film-card\ 1.jpg');
+	background-size: 100% 100%;
+    width: 300px;
+    height: 500px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+	box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.card.text-center:hover {
+	transform : rotate(2.5deg);
+	transition: .6s;
+}
+.play-circle i {
+	position: absolute;
+	top: 50%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	margin-top: auto;
+	height: 32px;
+	width: 32px;
+}
+.play-circle {
+	box-shadow: 5px 0px 5px black;
+	left: 120;
+	bottom: 145;
+	position: absolute;
+	margin: 0;
+	height: 64px;
+	width: 64px;
+	border-radius: 500px;
+	background-color: white;
+	color: #000000;
+}
+.play-circle:hover {
+	box-shadow: 5px 0px 5px white;
+	transition: .3s;
+	background-color: #000000;
+	color: white;
+}
+.rectangle {
+    background-color: rgba(33, 31, 31, 0.9);
+	box-shadow: inset;
+    box-sizing: border-box;
+    border-left: 5px solid rgba(255, 255, 255, 0.15);
+    border-right: 5px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.15);
+	position: absolute;
+	bottom: 0;
+	height: 180px;
+    width: 300px;
+	color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.rectangle h2 {
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 30;
+	position: absolute;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.rectangle hr {
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: rgb(161, 171, 129);
+    size: 100px;
+    width: 100px;
+	top: 50;
+}
+.rectangle h4 {
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 75;
+	position: absolute;
+	font-family: 'Chivo';
+}
+.rectangle span {
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 35;
+	position: absolute;
+	font-family: 'Chivo';
+	cursor: pointer;
+}
+.rectangle span:hover i {
+	color: rgb(161, 171, 129);
+}
+.rectangle span:active .card.text-center {
+    transform: translate(-50%, -50%) rotateY(180deg);
+}
+.prodcard:hover {
+	opacity: 1;
+	transition: .3s;
+}
+
+.prodcard-2 {
+	opacity: .9;
+	top: 50;
+	position: absolute;
+	left: 250;
+    width: 300px;
+    height: 500px;
+}
+.prodcard-2:hover {
+	opacity: 1;
+	transition: .3s;
+}
+.card.text-center-2 {
+	position: relative;
+	background: url('../images/film-card\ 2.png');
+	background-size: 100% 100%;
+    width: 300px;
+    height: 500px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+	box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.card.text-center-2:hover {
+	transform : rotate(2.5deg);
+	transition: .6s;
+}
+
+.prodcard-3 {
+	opacity: .9;
+	top: 50;
+	position: absolute;
+	right: 250;
+    width: 300px;
+    height: 500px;
+}
+.prodcard-3:hover {
+	opacity: 1;
+	transition: .3s;
+}
+.card.text-center-3 {
+	position: relative;
+	background: url('../images/film-card\ 3.jpg');
+	background-size: 100% 100%;
+    width: 300px;
+    height: 500px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+	box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.card.text-center-3:hover {
+	transform : rotate(2.5deg);
+	transition: .6s;
+}
+
+.go-top img {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+
+}
+
+.go-top {
+	float: right;
+	position: fixed;
+	width: 32px;
+	height: 32px;
+	bottom: 0;
+	right: 0;
+	margin-right: 32px;
+	margin-bottom: 32px;
+}
+
+.go-top:hover {
+	padding-bottom: 5px;
+	transition: .5s;
+}
+
+
+
+
+
+
+/*.left {
+	background: url('../images/iconarrow-left.png');
+    background-size: cover;
+	width: 64px;
+	height: 64px;
+}
+.right {
+    transform: rotate(180deg);
+	background: url('../images/iconarrow-left.png');
+    background-size: cover;
+	width: 64px;
+	height: 64px;
+}*/

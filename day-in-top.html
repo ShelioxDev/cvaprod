@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/day-in-top.css" />
+    <script
+      src="https://kit.fontawesome.com/c2df078048.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer>function clicked_i_in_prodcard(n){
+      back = document.querySelector(".behind-prodcard" + n);
+      card = document.querySelector(".prd" + n);
+      card.style.setProperty("transform", "rotateY(180deg)");
+      back.style.setProperty("transform", "rotateY(0deg)");
+      setTimeout(() => {
+        card.style.setProperty("z-index", "0");
+        back.style.setProperty("z-index", "1");
+      }, 600)
+    
+    
+      
+    }
+    
+    function clicked_i_in_back_prodcard(n){
+      back = document.querySelector(".behind-prodcard" + n);
+      card = document.querySelector(".prd" + n);
+      card.style.setProperty("transform", "rotateY(0deg)");
+      back.style.setProperty("transform", "rotateY(180deg)");
+      setTimeout(() => {
+        card.style.setProperty("z-index", "1");
+        back.style.setProperty("z-index", "0");
+      }, 600)
+    
+    
+      
+    }</script>
+    <title>CVA Prod - Day In Top</title>
+    <link rel="icon" href="images/favicon.png" sizes="16x16" style="border-radius: 100%;">
+  </head>
+  <body>
+    <div class="remove"></div>
+    <header>
+      <a href="#">
+      <img class="logo" src="images/cvaprodlogo.png" width="80" height="80"/>
+      </a>
+      <a href="#">
+        <h1 class="title-logo">CVA PROD.</h1>
+      </a>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">a propos</a>
+          </li>
+          <li class="nav-item">
+            <a href="projets.html" class="nav-link">projets</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+  </header>
+  <script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  
+  hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+  })
+  
+  document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+  }))
+  </script>
+    <div class="banner">
+      <div class="bannercontent">
+      <img src="images/cvaprodlogotransparent.png">
+      <div class="banner-column">
+      <h1><span>CVA PROD.</span></h1>
+      <h4><span>
+        Une agence spécialisée dans les sports extrêmes avec pour seul but :
+      </span></h4>
+      <h3><span>CAPTURE THE BEST</span></h3>
+    </div>
+  </div>
+    </div>
+    <div class="dayintop">
+      <h3>a day in top</h3>
+      <hr class="separator" noshade />
+      <div class="preview">
+        <span>
+            <iframe width="50%" height="60%" src="https://www.youtube.com/embed/1CR0QmCaMTs" frameborder="0" allowfullscreen="allowfullscreen" data-dashlane-frameid="266"></iframe>
+        </span>
+      </div>
+    </div>
+    </div>
+    <div class="smartcontact">
+      <i class="fa-solid fa-paper-plane"></i>
+    </div>
+    <div class="contact-menu">
+      <h1>LET'S GET
+        <br>
+        IN TOUCH !</h1>
+        <div class="mail">
+        <a href="mailto:prod.cva@gmail.com">prod.cva@gmail.com</a>
+        </div>
+        <div class="tel">
+        <a href="tel:+330651754713">+33 06 51 75 47 13</a>
+        </div>
+        <div class="contact-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    <script>
+      const smartcontact = document.querySelector(".smartcontact");
+      const contactMenu = document.querySelector(".contact-menu");
+      const remove = document.querySelector(".remove");
+    
+      smartcontact.addEventListener("click", () => {
+        smartcontact.classList.toggle("active");
+        contactMenu.classList.toggle("active");
+        remove.classList.toggle("active");
+    })
+    
+    remove.addEventListener("click", () => {
+      smartcontact.classList.remove("active");
+      contactMenu.classList.remove("active");
+      remove.classList.remove("active");
+  })
+    </script>
+    <a href="#" class="go-top">
+      <img src="images/chevron-up.png">
+    </a>
+    <footer>
+      <div class="cva">
+        <h2>CVA Prod.</h2>
+        <p>CVA Production est un agence de communication visuelle spécialisée dans les sports extrêmes,
+          celle-ci est basée en Auvergnes-Rhônes-Alpes au pied de la montagne.
+          Vous retrouverez sur cette chaîne les dernières productions associées à cette agence.
+          Nous vous souhaitons un bon visionnage.</p>
+          <hr color="#737373">
+      </div>
+      <div class="menu">
+        <h2>Menu</h2>
+        <nav>
+          <a class="footer-a" href="#">Accueil</a>
+          <a class="footer-a" href="about.html">A propos</a>
+          <a class="footer-a" href="projets.html">Projets</a>
+          <a class="footer-a" href="materiel.html">Materiel</a>
+        </nav>
+      </div>
+      <div class="socials">
+        <nav>
+          <a class="footer-a" href="https://www.instagram.com/cva_prod/"><i class="fa-brands fa-instagram"></i></a>
+          <a class="footer-a" href="https://www.youtube.com/channel/UCkf9MU19yksowd4LpothNuQ"><i class="fa-brands fa-youtube"></i></a>
+          <a class="footer-a" href="https://www.linkedin.com/in/cva-prod-161a59256/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+        <p class="copyright">&copy; 2022 CVA PRODUCTION - AUVERGNE-RHONES-ALPES</p>
+      </div>
+    </footer>
+  </body>
+</html>
