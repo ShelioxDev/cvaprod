@@ -572,13 +572,13 @@ nav .nav-item a:nth-child(2) {
 
 .behind-prodcard1, .behind-prodcard2, .behind-prodcard3 {
 	bottom: 0;
-	opacity: 1;
+	opacity: 0.8;
 	z-index: 0;
 	position: absolute;
 	top: 0;
 	width: 300px;
     height: 500px;
-	background-image: url("../images/film-card\ 1.jpg");
+	background-color: #000;
 	background-position: center;
 	background-size: auto 100%;
 	transform-origin: 50% 50%;
@@ -589,14 +589,6 @@ nav .nav-item a:nth-child(2) {
 	border-radius: 50px;
 	box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
 	border: 5px solid #666464;
-}
-
-.behind-prodcard2 {
-	background-image: url("../images/film-card\ 2.png");
-}
-
-.behind-prodcard3 {
-	background-image: url("../images/film-card\ 3.jpg");
 }
 
 .behind-prodcard1:hover, .behind-prodcard2:hover, .behind-prodcard3:hover {
