@@ -8,7 +8,7 @@ const titleEl = document.getElementById('title');
 const subtitleEl = document.getElementById('subtitle');
 const title = ["japon", "mont-blanc", "paris"]
 const subtitle = ['<b>Mont-Fuji</b>, déplacement hivernal pour notre nouveau film.', '<b>Mont-Blanc</b>, déplacement hivernal pour notre nouveau film.', '<b>Paris</b>, arrivée à la capitale pour notre nouveau film.']
-const backgrounds = ["../images/japon.jpg", "../images/mont-blanc.jpg", "../images/paris.jpg"];
+const backgrounds = ["../images/japon-1.jpg", "../images/mont-blanc-2.jpg", "../images/paris-3.jpg"];
 
 let i = 0;
 
